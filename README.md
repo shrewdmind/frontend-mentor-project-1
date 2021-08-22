@@ -50,7 +50,6 @@ I looking forward to working with css and html5, and picking up new languages to
 
 ## Author
 
-- Website - [Damilola John Durodola](https://www.your-site.com)
-- Frontend Mentor - [@john trickz](https://www.frontendmentor.io/profile/john trickz)
+- Frontend Mentor - [@john trickz](https://www.frontendmentor.io/profile/shrewdmind)
 - LinkedIn - [@Damilola Durodola](https://www.linkedin.com/)
 
