@@ -134,9 +134,11 @@ button:hover {
   }
 
   .illustration-body {
+    border-radius: 0 0 20px 20px;
     width: 320px;
     top: 2%;
     margin-left: -160px;
+    margin-bottom: 30px;
   }
   
   .illustration-body img {
