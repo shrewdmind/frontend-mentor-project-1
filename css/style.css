@@ -1,139 +1,112 @@
-/********************** Foundation *********************/
-body {
-  background: hsl(225, 100%, 94%);
+* {
+  box-sizing: border-box;
   margin: 0
 }
 
-main {
-  text-align: center;
-  position: relative;
-  height: 100vh;
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 16px;
-  color: #676b7a;
-}
-
-@media screen and (max-width: 600px) {
-  .background-image img {
-    display: none
-  }
-}
-
 /************************ Body *************************/
-.background-image img {
-  width: 100%;
-  height: 47vh;
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+  height: auto;
+  font-size: 16px;
+  color: #676b7a
 }
 
-.illustration-body img{
-  position: absolute;
-  left: 50%;
-  margin-left: -225px;
-  top: 125px;
-  border-radius: 20px 20px 0 0;
+.background-body {
+  background-image: url("../image/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: top;
+  background-size: 100% 100%;
+  overflow: hidden;
+  text-align: center;
+  height: 48vh;
 }
 
-.text-region {
+.illustration-body {
+  border-radius: 20px;
   position: absolute;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  top: 345px;
+  justify-content: center;
+  top: 15%;
   left: 50%;
   width: 450px;
-  height: 468px;
   margin-left: -225px;
-  border-radius: 0 0 20px 20px;
   line-height: 1.5;
-  box-shadow: 0px 5px 20px #b7c1eb;
 }
 
-/********************* Text-Region Features ***********************/
-.plan {
-  position: relative;
+.illustration-body img {
+  border-radius: 20px 20px 0 0
+}
+
+h1 {
+  margin: 35px 0 15px;
+  color: black;
+}
+
+.main-text {
+  margin: 0 45px;
+}
+
+.plan-body {
   background-color: #f5f7ff;
-  width: 360px;
-  height: 100px;
-  left: 50%;
-  top: 55px;
-  transform: translate(-50%, -50%);
+  margin: 25px 45px 35px;
+  padding: 24px;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5
 }
 
-.payment {
-  position: relative;
-  background-color: hsl(245, 75%, 52%);
-  width: 360px;
-  left: 50%;
-  top: 62px;
-  transform: translate(-50%, -50%);
-  padding: 13px 0 13px;
-  border-radius: 10px;
-  color: white;
-  font-weight: 700;
-  font-size: 15px;
-  box-shadow: 0px 10px 30px #9cacf0;
+.price {
+  display: flex;
+  flex-direction: row;
 }
 
-/********************** Plan features position ************************/
-.plan img {
-  position: absolute;
-  top: 26px;
-  left: 0;
-  right: 0;
-  margin-left: 24px;
+.music-icon {
+  margin-right: 24px;
 }
 
-.annual-plan {
-  position: absolute;
-  left: 96px;
-  top: 26px;
+.plan {
   font-weight: 900;
   color: black;
 }
 
-.price {
-  position: absolute;
-  left: 96px;
-  bottom: 26px;
-}
-
 .change {
-  position: absolute;
-  right: 24px;
-  margin-top: 40px;
-  color: hsl(245, 75%, 52%);
-  text-decoration: underline;
-  font-weight: 800;
-  font-size: 13px;
+  font-weight: 900;
+  font-size: 15px;
 }
 
-/********************* Text Properties ********************/
-h1 {
-  margin: 42px 0 0px;
-  font-size: 28px;
-  font-weight: 800;
-  color: black;
-}
-
-p {
-  margin-top: 13px;
-}
-
-.cancel-order {
-  margin: 72px 0 45px;
-  font-weight: 800;
-  font-size: 13px;
-}
-
-/********************* Hover State ***********************/
 .change:hover {
   text-decoration: none;
   color: #785bc9;
+}
+
+button {
+  margin: 0 45px 0;
+  padding: 15px;
+  border: 0;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 0px 10px 30px #9cacf0;
+}
+
+button:hover {
+  background-color: #785bc9;
   cursor: pointer;
 }
 
-.payment:hover {
-  background-color: #785bc9;
-  cursor: pointer;
+.cancel-order {
+  margin: 28px 0 40px;
+  font-weight: 900;
+  font-size: 14px;
+  text-decoration: none;
+  color: #676b7a;
 }
 
 .cancel-order:hover {
@@ -141,10 +114,59 @@ p {
   cursor: pointer;
 }
 
-/********************** Copy-Right *********************/
 .attribution {
+  color: black;
   position: absolute;
-  bottom: 0px;
+  bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/***************************** MOBILE *********************************/
+@media screen and (max-width: 575px) {
+  body {
+    font-size: 14px;
+  }
+
+  .background-body {
+    background-image: url("../image/pattern-background-mobile.svg");
+    height: 30vh;
+  }
+
+  .illustration-body {
+    width: 320px;
+    margin-left: -160px;
+  }
+
+  .main-text {
+    margin: 0 27px;
+  }
+
+  .plan-body {
+    margin: 25px 27px 24px;
+    padding: 15px;
+  }
+
+  .music-icon {
+    margin-right: 15px;
+  }
+
+  .change {
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  button {
+    margin: 0 27px 0;
+    box-shadow: 0px 10px 30px #9cacf0;
+  }
+
+  .cancel-order {
+    margin: 23px 0 32px;
+  }
+
+  .attribution {
+    font-size: 10px;
+    text-align: center;
+  }
 }
