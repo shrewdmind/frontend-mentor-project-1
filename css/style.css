@@ -127,6 +127,7 @@ button:hover {
 @media screen and (max-width: 575px) {
   body {
     font-size: 14px;
+    height: 600px;
   }
 
   .background-body {
