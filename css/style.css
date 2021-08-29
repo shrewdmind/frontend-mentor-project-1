@@ -138,6 +138,10 @@ button:hover {
     top: 2%;
     margin-left: -160px;
   }
+  
+  .illustration-body img {
+    position: top;
+  }
 
   .main-text {
     margin: 0 27px;
